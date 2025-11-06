@@ -26,7 +26,7 @@ This repository serves as **Appendix A** of the Interim Report, containing all s
 
 If one needs to verify the functionality, please refer to the following:
 
-* **Full Python Code:** The file `01_Python_Prototype/AIS Deoder` can be opened directly in any web browser to view the full code.
+* **Full Python Code:** The file `01_Python_Prototype/AIS Deoder.html` can be downloaded and opened directly in any web browser to view the full code + interactive map.
 * **Decoded Data Sample (Figure 3):** The file `04_Sample_Data/L4_NMEA_Decoded.txt` provides the structured output data for numerical review.
 * **Static Map Output (Figure 4):** The file `03_Visualisation/Mapping on Jupyter` provides the static map output with the data shown when a vessel is clicked.
 * **Full C Code:** The file `03_Visualisation/code-snapshot, c code` provides a screenshot of the full C code for ease of view.
