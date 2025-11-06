@@ -26,12 +26,14 @@ This repository serves as **Appendix A** of the Interim Report, containing all s
 
 If one needs to verify the functionality, please refer to the following:
 
-* **Static Map Output (Figure 2):** The file `03_Visualization/final_map_output.html` can be opened directly in any web browser to view the decoded vessel tracks without needing to run the code.
-* **Decoded Data Sample (Table A.1):** The file `04_Sample_Data/L4_NMEA_Decoded.csv` provides the structured output data for numerical review.
+* **Full Python Code:** The file `01_Python_Prototype/AIS Deoder` can be opened directly in any web browser to view the full code.
+* **Decoded Data Sample (Figure 3):** The file `04_Sample_Data/L4_NMEA_Decoded.txt` provides the structured output data for numerical review.
+* **Static Map Output (Figure 4):** The file `03_Visualisation/Mapping on Jupyter` provides the static map output with the data shown when a vessel is clicked.
+* **Full C Code:** The file `03_Visualisation/code-snapshot, c code` provides a screenshot of the full C code for ease of view.
 
 ### 2. Functional Equivalence (C vs. Python)
 
-The successful C-language conversion is proven by the side-by-side console output comparison in **Figure 3** of the report. The source code for both programs is available here:
+The successful C-language conversion is proven by the side-by-side console output comparison in **Figure 5** of the report. The source code for both programs is available here:
 
 * **To Run Python Prototype:** Download and open the `.ipynb` file in a Jupyter environment (e.g., VS Code or Jupyter Lab) to execute the code cells.
-* **To Review C Implementation:** The code in `02_C_Implementation/` can be compiled and run in a local C environment (e.g., VS Code or command line) to check functional equivalence.
+* **To Review C Implementation:** The code in `02_C_Implementation/` can be compiled and run in a local C environment (e.g., VS Code or command line) to check functional equivalence. 
