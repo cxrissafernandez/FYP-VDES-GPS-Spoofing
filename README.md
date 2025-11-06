@@ -7,7 +7,7 @@ This repository contains the validated source code and supporting data for the F
 
 ## 1. Repository Structure and Milestones
 
-The folders below reflect the project's milestones, allowing reviewers to verify the progression from initial proof-of-concept to the final C-language implementation:
+The folders below reflect the project's milestones, the progression from initial proof-of-concept to the final C-language implementation:
 
 | Folder | Content | Milestone Achieved |
 | :--- | :--- | :--- |
