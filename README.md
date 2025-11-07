@@ -1,4 +1,4 @@
-# FYP-VDES-GPS-Spoofing
+# FYP: Secure Monitoring of Ship Location using VDES Technology and Satellite Communication
 
 ## Project Overview
 
