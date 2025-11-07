@@ -39,4 +39,4 @@ The successful C-language conversion is proven by the side-by-side console outpu
 * **To Run Python Prototype:** Download and open the `.ipynb` file in a Jupyter environment (e.g., VS Code or Jupyter Lab) to execute the code cells.
 * **To Review C Implementation:** The code in `02_C_Implementation/` can be compiled and run in a local C environment (e.g., VS Code or command line) to check functional equivalence. 
 
-The sample input data to be used can be downloaded from `04_Sample_Data/All_Decoded_L4_Messages`. Update the path files for input and output before running the code.
+The sample input data to be used can be downloaded from `04_Sample_Data/L4_All_AIS_Messages`. Update the path files for input and output before running the code.
