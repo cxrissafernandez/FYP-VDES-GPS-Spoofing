@@ -14,7 +14,7 @@ The folders below reflect the project's milestones, the progression from initial
 | :--- | :--- | :--- |
 | `01_Python_Prototype/` | **AIS Decoder (Jupyter Notebook)** | Functional validation of the core 6-bit un-armouring and message parsing logic and mapping data. Includes static HTML for ease of view |
 | `02_C_Implementation/` | **AIS Decoder (C-Language)** | Successful conversion of the prototype logic to the embedded C environment. |
-| `03_Visualization/` | **Mapping & Output** | Visual proof-of-concept of decoded data accuracy. |
+| `03_Visualisation/` | **Mapping & Output** | Visual proof-of-concept of decoded data accuracy. |
 | `04_Sample_Data/` | **NMEA Input / CSV Output** | Source data used for testing and validation, and results. |
 
 ---
