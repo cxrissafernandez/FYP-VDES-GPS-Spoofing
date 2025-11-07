@@ -4,6 +4,7 @@
 
 This repository contains the validated source code and supporting data for the Final Year Project Interim Report on **Secure Monitoring of Ship Location using VDES Technology and Satellite Communication**. The project aims to design a system to detect **GPS spoofing** in Automated Identification System (AIS) messages by comparing reported ship locations against the satellite payload's verifiable telemetry data.
 
+if unable to open any of the files, do drop me an email! thanks!
 
 ## 1. Repository Structure and Milestones
 
