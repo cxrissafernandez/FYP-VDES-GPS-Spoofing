@@ -9,7 +9,7 @@ This repository serves as **Appendix A** of the Interim Report, documenting the 
 | `01_Python_Prototype/` | **AIS Decoder (Jupyter Notebook)** | Functional validation of the core 6-bit un-armouring and message parsing logic and mapping data. Includes static HTML for ease of view. **Contains the full source code for the original and refined scripts (in both html and .ipynb)** |
 | `02_C_Implementation/` | **AIS Decoder (C-Language)** | Successful conversion of the prototype logic to the industrial embedded C environment. **Contains the full source code snapshots (ais_decoder_C & refined_ais_decoder_C).** |
 | `03_Visualisation/` | **Mapping & Output Screenshots** | Visual proof-of-concept of decoded data accuracy, map outputs, and console results (terminal/output cell screenshots). |
-| `04_Sample_Data/` | **NMEA Input / CSV Output** | Source data used for testing and validation, and results. |
+| `04_Sample_Data/` | **NMEA Input / CSV Output** | Source data used for testing and validation, and results. Includes the **decoded outputs** in CSV/TXT |
 
 ---
 
