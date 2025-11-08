@@ -28,7 +28,7 @@ The following files allows one to verify the project's functionality and results
 
 | Verification Component | File Location | Functional Description |
 | :--- | :--- | :--- |
-| **Latest Interactive Python Code & Map** | `01_Python_Prototype/Refined AIS Decoder_Python (081125).ipynb` | Download and open this `.ipynb` file in a Jupyter environment (e.g., **VS Code or Jupyter Lab**) to execute the code cells and interact directly with the live map output. |
+| **Latest Interactive Python Code & Map** | `01_Python_Prototype/Refined AIS Decoder_Python (081125).ipynb` | Download and open this `.ipynb` file in a Jupyter environment (e.g., **VS Code or Jupyter Lab**) to execute the code cells and interact directly with the live map output. In VS Code, you can view the code and interact with the map wihtout running the script. |
 | **Decoded Data Sample** | `04_Sample_Data/nmea-sample_Refined_AIS_Decoder_C_081125` | Provides the structured 35-field CSV output data for numerical review. Other sample data is also available in the same folder |
 | **Static Map Output** | `03_Visualisation/Mapping on Jupyter` | Provides the static map output with the data shown when a vessel marker is clicked (screenshot). |
 | **Full C Code Snapshot** | `02_C_Implementation/` | Contains the screenshot of the full C code of both versions for ease of review. |
