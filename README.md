@@ -1,42 +1,48 @@
 # FYP: Secure Monitoring of Ship Location using VDES Technology and Satellite Communication
 
-## Project Overview
-
-This repository contains the validated source code and supporting data for the Final Year Project Interim Report on **Secure Monitoring of Ship Location using VDES Technology and Satellite Communication**. The project aims to design a system to detect **GPS spoofing** in Automated Identification System (AIS) messages by comparing reported ship locations against the satellite payload's verifiable telemetry data.
-
-if unable to open any of the files, do drop me an email! thanks!
-
 ## 1. Repository Structure and Milestones
 
-The folders below reflect the project's milestones, the progression from initial proof-of-concept to the final C-language implementation:
+This repository serves as **Appendix A** of the Interim Report, documenting the project's milestones and progression from initial Python proof-of-concept to the finalized C-language implementation.
 
 | Folder | Content | Milestone Achieved |
 | :--- | :--- | :--- |
-| `01_Python_Prototype/` | **AIS Decoder (Jupyter Notebook)** | Functional validation of the core 6-bit un-armouring and message parsing logic and mapping data. Includes static HTML for ease of view |
-| `02_C_Implementation/` | **AIS Decoder (C-Language)** | Successful conversion of the prototype logic to the embedded C environment. |
-| `03_Visualisation/` | **Mapping & Output** | Visual proof-of-concept of decoded data accuracy. |
+| `01_Python_Prototype/` | **AIS Decoder (Jupyter Notebook)** | Functional validation of the core 6-bit un-armouring and message parsing logic and mapping data. Includes static HTML for ease of view. **Contains the full source code for the original and refined scripts (in both html and .ipynb)** |
+| `02_C_Implementation/` | **AIS Decoder (C-Language)** | Successful conversion of the prototype logic to the industrial embedded C environment. **Contains the full source code snapshots (ais_decoder_C & refined_ais_decoder_C).** |
+| `03_Visualisation/` | **Mapping & Output Screenshots** | Visual proof-of-concept of decoded data accuracy, map outputs, and console results (terminal/output cell screenshots). |
 | `04_Sample_Data/` | **NMEA Input / CSV Output** | Source data used for testing and validation, and results. |
 
 ---
 
-## 2. Verification and Code Access
+## 2. Technical Validation and Verification
 
-This repository serves as **Appendix A** of the Interim Report, containing all source code listings.
+### 2.1. Decoder Robustness and Data Completeness (AIS Decoder_Python (120925) vs. Refined AIS Decoder_Python (081125) Insight)
 
-### 1. Proof of Concept Verification
+The initial decoding effort identified two critical requirements: robustness against malformed data and ensuring the output retained full static vessel information.
 
-If one needs to verify the functionality, please refer to the following:
+* **Non-Standard Filtering:** Validation logic was implemented to accurately identify and filter **non-standard AIS message types (28-63)** that are outside the ITU-R M.1371 standard, preventing corrupted data contamination in the subsequent analysis pipeline.
+* **Field Completeness:** The final Python and C decoders were configured to return a consistent array of **35 fields** (often referred to in development as AIS Decoder_Python (081125)). This was necessary because preliminary versions (AIS Decoder_Python (120925)) only outputted 17 core navigational fields, **omitting essential static data (Ship Name, IMO, Call Sign, Ship Dimensions)** found in auxiliary AIS messages (Type 5, 19, 24). The 35-field structure ensures data completeness for both ship identification and detailed visualization.
 
-* **Full Python Code:** The file `01_Python_Prototype/AIS Deoder.html` can be downloaded and opened directly in any web browser to view the full code + interactive map.
-* **Decoded Data Sample (Figure 3):** The file `04_Sample_Data/L4_NMEA_Decoded.txt` provides the structured output data for numerical review.
-* **Static Map Output (Figure 4):** The file `03_Visualisation/Mapping on Jupyter` provides the static map output with the data shown when a vessel is clicked.
-* **Full C Code:** The file `03_Visualisation/code-snapshot, c code` provides a screenshot of the full C code for ease of view.
+### 2.2. Verification Files and Interactive Access
 
-### 2. Functional Equivalence (C vs. Python)
+The following files allows one to verify the project's functionality and results directly:
 
-The successful C-language conversion is proven by the side-by-side console output comparison in **Figure 5** of the report. The source code for both programs is available here:
+| Verification Component | File Location | Functional Description |
+| :--- | :--- | :--- |
+| **Interactive Python Code & Map** | `01_Python_Prototype/Refined AIS Decoder_Python (081125).ipynb` | Download and open this `.ipynb` file in a Jupyter environment (e.g., **VS Code or Jupyter Lab**) to execute the code cells and interact directly with the live map output. |
+| **Decoded Data Sample (Figure 3)** | `04_Sample_Data/L4_NMEA_Decoded.txt` | Provides the structured 35-field CSV output data for numerical review. |
+| **Static Map Output (Figure 4)** | `03_Visualisation/Mapping on Jupyter` | Provides the static map output with the data shown when a vessel marker is clicked (screenshot). |
+| **Full C Code Snapshot** | `02_C_Implementation/` | Contains the screenshot of the full C code for ease of review. |
 
-* **To Run Python Prototype:** Download and open the `.ipynb` file in a Jupyter environment (e.g., VS Code or Jupyter Lab) to execute the code cells.
-* **To Review C Implementation:** The code in `02_C_Implementation/` can be compiled and run in a local C environment (e.g., VS Code or command line) to check functional equivalence. 
+### 2.3. Functional Equivalence (C vs. Python)
 
-The sample input data to be used can be downloaded from `04_Sample_Data/L4_All_AIS_Messages`. Update the path files for input and output before running the code.
+The integrity of the conversion from the Python prototype to the C implementation is proven by the side-by-side console output comparison in **Figure 5** of the report, demonstrating functional equivalence.
+
+* **To Run Python Prototype:** Download and open the relevant `.ipynb` file in a Jupyter environment to execute the code cells. This repository contains both versions of file structures to show the difference in the data returned.
+* **To Review C Implementation:** The source code in `02_C_Implementation/` can be compiled and run in a local C environment to confirm functional equivalence.
+* **Data Sources:** The necessary sample input data files are available in `04_Sample_Data/L4_All_AIS_Messages.txt` and `04_Sample_Data/nmea-sample_AIS_Messages`. **Note: Update the file paths for input and output before running the code locally.**
+
+---
+
+### Contact
+
+As this is my first time using GitHub, if you are unable to open any of the files, do drop me an email and I will send the files over directly! 
