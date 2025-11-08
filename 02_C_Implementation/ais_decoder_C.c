@@ -422,8 +422,8 @@ int main(void) {
     printf("\n============================================================\n\n");
     
     // Process full file - Update these paths as needed
-    const char *input_path = "C:\\Users\\cxris\\OneDrive\\Desktop\\VDES research\\conversion\\L4_All_AIS_Messages.txt";
-    const char *output_path = "C:\\Users\\cxris\\OneDrive\\Desktop\\VDES research\\conversion\\L4_NMEA_Decoded_C.txt";
+    const char *input_path = "C:\\Users\\cxris\\OneDrive\\Desktop\\VDES research\\conversion\\nmea-sample";
+    const char *output_path = "C:\\Users\\cxris\\OneDrive\\Desktop\\VDES research\\conversion\\nmea-sample_AIS_Decoder_C_120925";
     
     printf("Processing AIS messages from: %s\n", input_path);
     process_ais_file(input_path, output_path);
