@@ -28,17 +28,17 @@ The following files allows one to verify the project's functionality and results
 
 | Verification Component | File Location | Functional Description |
 | :--- | :--- | :--- |
-| **Interactive Python Code & Map** | `01_Python_Prototype/Refined AIS Decoder_Python (081125).ipynb` | Download and open this `.ipynb` file in a Jupyter environment (e.g., **VS Code or Jupyter Lab**) to execute the code cells and interact directly with the live map output. |
-| **Decoded Data Sample (Figure 3)** | `04_Sample_Data/L4_NMEA_Decoded.txt` | Provides the structured 35-field CSV output data for numerical review. |
-| **Static Map Output (Figure 4)** | `03_Visualisation/Mapping on Jupyter` | Provides the static map output with the data shown when a vessel marker is clicked (screenshot). |
-| **Full C Code Snapshot** | `02_C_Implementation/` | Contains the screenshot of the full C code for ease of review. |
+| **Latest Interactive Python Code & Map** | `01_Python_Prototype/Refined AIS Decoder_Python (081125).ipynb` | Download and open this `.ipynb` file in a Jupyter environment (e.g., **VS Code or Jupyter Lab**) to execute the code cells and interact directly with the live map output. |
+| **Decoded Data Sample** | `04_Sample_Data/nmea-sample_Refined_AIS_Decoder_C_081125` | Provides the structured 35-field CSV output data for numerical review. Other sample data is also available in the same folder |
+| **Static Map Output** | `03_Visualisation/Mapping on Jupyter` | Provides the static map output with the data shown when a vessel marker is clicked (screenshot). |
+| **Full C Code Snapshot** | `02_C_Implementation/` | Contains the screenshot of the full C code of both versions for ease of review. |
 
 ### 2.3. Functional Equivalence (C vs. Python)
 
 The integrity of the conversion from the Python prototype to the C implementation is proven by the side-by-side console output comparison in **Figure 5** of the report, demonstrating functional equivalence.
 
 * **To Run Python Prototype:** Download and open the relevant `.ipynb` file in a Jupyter environment to execute the code cells. This repository contains both versions of file structures to show the difference in the data returned.
-* **To Review C Implementation:** The source code in `02_C_Implementation/` can be compiled and run in a local C environment to confirm functional equivalence.
+* **To Review Latest C Implementation:** The source code in `02_C_Implementation/refined_ais_decoder_C.c` can be compiled and run in a local C environment to confirm functional equivalence.
 * **Data Sources:** The necessary sample input data files are available in `04_Sample_Data/L4_All_AIS_Messages.txt` and `04_Sample_Data/nmea-sample_AIS_Messages`. **Note: Update the file paths for input and output before running the code locally.**
 
 ---
